@@ -1,0 +1,20 @@
+{
+  "name": "notebook",
+  "version": "0.0.1",
+  "description": "學習筆記",
+  "main": "index.js",
+  "authors": {
+    "name": "sihle",
+    "email": "gubug777@gmail.com"
+  },
+  "repository": "notebook/notebook",
+  "scripts": {
+    "dev": "vuepress dev ./",
+    "build": "vuepress build ./",
+    "deploy": "sh deploy.sh"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.9.7"
+  }
+}
