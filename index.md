@@ -2,7 +2,7 @@
 home: true
 heroImage: https://v1.vuepress.vuejs.org/hero.png
 tagline: 學習筆記
-actionText: Quick Start →
+actionText: 去看看 →
 actionLink: /frontend/
 features:
 - title: 前端
