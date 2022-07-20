@@ -62,6 +62,7 @@ module.exports = {
    */
   plugins: {
     '@vuepress/plugin-back-to-top': true,
+    'vuepress-plugin-smooth-scroll': true,
     '@vuepress/plugin-medium-zoom': false,
   },
 
