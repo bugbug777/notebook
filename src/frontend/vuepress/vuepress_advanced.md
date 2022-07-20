@@ -1,3 +1,6 @@
+---
+prev: 'vuepress_basic'
+---
 # VuePress Advanced
 
 這裡記錄一些 VuePress 比較進階的使用方法。

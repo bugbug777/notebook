@@ -1,3 +1,8 @@
+---
+prev: '../'
+next: 'vuepress_advanced'
+---
+
 # VuePress Basic
 
 這裡存放學習使用 VuePress 的筆記。
