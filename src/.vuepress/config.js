@@ -12,12 +12,6 @@ module.exports = {
       lang: 'zh-Hant-TW'
     }
   },
-
-  /**
-   * Extra tags to be injected to the page HTML `<head>`
-   *
-   * ref：https://v1.vuepress.vuejs.org/config/#head
-   */
   head: [
     ['meta', { name: "viewport", content: "width=device-width,initial-scale=1.0,maximum-scale=1.0" }],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
