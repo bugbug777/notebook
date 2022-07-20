@@ -1,4 +1,4 @@
-const { description } = require('../package')
+const { description } = require('../../package')
 
 module.exports = {
   base: '/notebook/',
@@ -35,7 +35,7 @@ module.exports = {
     editLinks: false,
     docsDir: '',
     editLinkText: '',
-    lastUpdated: false,
+    lastUpdated: true,
     nav: [
       {
         text: '前端',
@@ -55,20 +55,6 @@ module.exports = {
       }
     ],
     sidebar: 'auto',
-    // sidebar: {
-    //   '/frontend/': [
-    //     {
-    //       title: '前端',
-    //       collapsable: true,
-    //       children: [
-    //         'js',
-    //         'vue',
-    //         'vite',
-    //         'vuepress',
-    //       ]
-    //     }
-    //   ],
-    // }
   },
 
   /**
@@ -77,5 +63,16 @@ module.exports = {
   plugins: {
     '@vuepress/plugin-back-to-top': true,
     '@vuepress/plugin-medium-zoom': false,
+  },
+
+  /**
+   * Use alias
+   */
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@': '/src'
+      }
+    }
   }
 }

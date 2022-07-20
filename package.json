@@ -9,8 +9,8 @@
   },
   "repository": "notebook/notebook",
   "scripts": {
-    "dev": "vuepress dev ./",
-    "build": "vuepress build ./",
+    "dev": "vuepress dev src",
+    "build": "vuepress build src",
     "deploy": "sh deploy.sh"
   },
   "license": "MIT",
