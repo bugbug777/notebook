@@ -23,7 +23,8 @@ module.exports = {
     editLinks: false,
     docsDir: '',
     editLinkText: '',
-    lastUpdated: true,
+    smoothScroll: true,
+    lastUpdated: '最後更新',
     nav: [
       {
         text: '前端',
@@ -46,7 +47,6 @@ module.exports = {
   },
   plugins: {
     '@vuepress/plugin-back-to-top': true,
-    'vuepress-plugin-smooth-scroll': true,
   },
   configureWebpack: {
     resolve: {
