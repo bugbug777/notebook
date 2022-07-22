@@ -17,6 +17,7 @@ sidebar: 'auto'
 - [Javascript Object Reference](js/js_obj_ref.md)
 - [Javascript Array Methods](js/js_ary_methods.md)
 - [Javascript Advanced](js/js_advanced.md)
+- [Javascript Core](js/js_core.md)
 - [Javascript This Mechanism](js/js_this.md)
 - [Javascript Promise](js/js_promise.md)
 - [Javascript ESM](js/js_esm.md)
