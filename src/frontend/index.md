@@ -11,6 +11,10 @@ sidebar: 'auto'
 
 ## The Web Cake
 
+### CSS
+
+- [Tailwind](css/tailwind.md)
+
 ### Javasciprt
 
 - [Javascript Basic](js/js_basic.md)
