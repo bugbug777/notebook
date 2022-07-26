@@ -52,6 +52,7 @@ sidebar: 'auto'
 - [Git Basic](git/git_basic.md)
 - [Git Advanced](git/git_advanced.md)
 - [Git Branch](git/git_branch.md)
+- [Git Remote](git/git_remote.md)
 - [[偷米騎巴哥]簡單介紹GIT版本控制-Part1](https://youtu.be/659kWnMgpoI)
 - [[偷米騎巴哥]簡單介紹GIT版本控制-Part2](https://youtu.be/TF6mWcBCf2o)
 - [[偷米騎巴哥]簡單介紹GIT版本控制-Part3](https://youtu.be/PjQF6Bs3IHs)
