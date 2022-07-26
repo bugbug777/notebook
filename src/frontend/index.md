@@ -46,3 +46,12 @@ sidebar: 'auto'
 
 - [VuePress Basic](vuepress/vuepress_basic.md)
 - [VuePress Advanced](vuepress/vuepress_advanced.md)
+
+### 版本控制
+
+- [Git Basic](git/git_basic.md)
+- [Git Advanced](git/git_advanced.md)
+- [Git Branch](git/git_branch.md)
+- [[偷米騎巴哥]簡單介紹GIT版本控制-Part1](https://youtu.be/659kWnMgpoI)
+- [[偷米騎巴哥]簡單介紹GIT版本控制-Part2](https://youtu.be/TF6mWcBCf2o)
+- [[偷米騎巴哥]簡單介紹GIT版本控制-Part3](https://youtu.be/PjQF6Bs3IHs)
