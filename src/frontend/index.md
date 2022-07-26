@@ -34,6 +34,7 @@ sidebar: 'auto'
 - [Vue Options API](vue/vuejs_options_api.md)
 - [Vue Compoents](vue/vuejs_components.md)
 - [Vue Advanced](vue/vuejs_advanced.md)
+- [Pinia](vue/pinia.md)
 
 ## Tooling
 
