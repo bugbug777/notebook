@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Git Remote | Sihle&#39;s Notebook</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="學習筆記">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/notebook/assets/css/0.styles.f25d6b5a.css" as="style"><link rel="preload" href="/notebook/assets/js/app.ca51eb31.js" as="script"><link rel="preload" href="/notebook/assets/js/2.feaa55c5.js" as="script"><link rel="preload" href="/notebook/assets/js/17.56ae330d.js" as="script"><link rel="prefetch" href="/notebook/assets/js/10.a5316d0b.js"><link rel="prefetch" href="/notebook/assets/js/11.3f8eafd9.js"><link rel="prefetch" href="/notebook/assets/js/12.4141ace7.js"><link rel="prefetch" href="/notebook/assets/js/13.a15e202c.js"><link rel="prefetch" href="/notebook/assets/js/14.a6b43a60.js"><link rel="prefetch" href="/notebook/assets/js/15.72672e6b.js"><link rel="prefetch" href="/notebook/assets/js/16.ed6b80ce.js"><link rel="prefetch" href="/notebook/assets/js/18.d0d3d1bb.js"><link rel="prefetch" href="/notebook/assets/js/19.f09e8388.js"><link rel="prefetch" href="/notebook/assets/js/20.16f463d4.js"><link rel="prefetch" href="/notebook/assets/js/21.7bfb66eb.js"><link rel="prefetch" href="/notebook/assets/js/22.7c129ff9.js"><link rel="prefetch" href="/notebook/assets/js/23.3fe9898f.js"><link rel="prefetch" href="/notebook/assets/js/24.fa0b7883.js"><link rel="prefetch" href="/notebook/assets/js/25.a083c63d.js"><link rel="prefetch" href="/notebook/assets/js/26.af9ca3a8.js"><link rel="prefetch" href="/notebook/assets/js/27.1040f99b.js"><link rel="prefetch" href="/notebook/assets/js/28.58fede67.js"><link rel="prefetch" href="/notebook/assets/js/29.7bb384bd.js"><link rel="prefetch" href="/notebook/assets/js/3.2495e565.js"><link rel="prefetch" href="/notebook/assets/js/30.65b003fe.js"><link rel="prefetch" href="/notebook/assets/js/31.7ce0d139.js"><link rel="prefetch" href="/notebook/assets/js/32.23c3fa62.js"><link rel="prefetch" href="/notebook/assets/js/33.3fc7ce00.js"><link rel="prefetch" href="/notebook/assets/js/34.02d3f90e.js"><link rel="prefetch" href="/notebook/assets/js/4.a6a20a02.js"><link rel="prefetch" href="/notebook/assets/js/5.7cc1547f.js"><link rel="prefetch" href="/notebook/assets/js/6.8c820fdc.js"><link rel="prefetch" href="/notebook/assets/js/7.82b49aa2.js"><link rel="prefetch" href="/notebook/assets/js/8.a63ed116.js"><link rel="prefetch" href="/notebook/assets/js/9.67052e75.js">
+    <link rel="stylesheet" href="/notebook/assets/css/0.styles.f25d6b5a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/notebook/" class="home-link router-link-active"><!----> <span class="site-name">Sihle's Notebook</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/notebook/frontend/" class="nav-link router-link-active">
+  前端
+</a></div><div class="nav-item"><a href="/notebook/backend/" class="nav-link">
+  後端
+</a></div><div class="nav-item"><a href="/notebook/else/" class="nav-link">
+  其它
+</a></div><div class="nav-item"><a href="https://bugbug777.github.io/sihle/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  部落格
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/notebook/frontend/" class="nav-link router-link-active">
+  前端
+</a></div><div class="nav-item"><a href="/notebook/backend/" class="nav-link">
+  後端
+</a></div><div class="nav-item"><a href="/notebook/else/" class="nav-link">
+  其它
+</a></div><div class="nav-item"><a href="https://bugbug777.github.io/sihle/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  部落格
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Git Remote</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notebook/frontend/git/git_remote.html#建立遠端儲存庫" class="sidebar-link">建立遠端儲存庫</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/notebook/frontend/git/git_remote.html#查閱、設定遠端儲存庫" class="sidebar-link">查閱、設定遠端儲存庫</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/notebook/frontend/git/git_remote.html#複製遠端儲存庫" class="sidebar-link">複製遠端儲存庫</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/notebook/frontend/git/git_remote.html#推送到遠端儲存庫" class="sidebar-link">推送到遠端儲存庫</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notebook/frontend/git/git_remote.html#推送意外" class="sidebar-link">推送意外</a></li></ul></li><li><a href="/notebook/frontend/git/git_remote.html#是禁術" class="sidebar-link">是禁術</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="git-remote"><a href="#git-remote" class="header-anchor">#</a> Git Remote</h1> <p>Git 遠端相關操作。</p> <h2 id="建立遠端儲存庫"><a href="#建立遠端儲存庫" class="header-anchor">#</a> 建立遠端儲存庫</h2> <p>在本地端建立遠端儲存庫（非 Github 在<strong>遠端</strong>的遠端儲存庫，而是<strong>本地端</strong>的遠端儲存庫</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 本地建立遠端儲存庫, 沒有 .git 因為不需要</span>
+<span class="token function">git</span> init --bare
+<span class="token comment"># 本地建立遠端儲存庫, 並建立目錄</span>
+<span class="token function">git</span> init --bare <span class="token punctuation">[</span>DirName<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="查閱、設定遠端儲存庫"><a href="#查閱、設定遠端儲存庫" class="header-anchor">#</a> 查閱、設定遠端儲存庫</h2> <p>查閱遠端儲存庫相關資訊。</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 顯示遠端儲存庫清單</span>
+<span class="token function">git</span> remote
+
+<span class="token comment"># 新增遠端儲存庫位置</span>
+<span class="token function">git</span> remote <span class="token function">add</span> <span class="token punctuation">[</span>RepoName<span class="token punctuation">]</span> <span class="token punctuation">[</span>RepoUrl<span class="token punctuation">]</span>
+<span class="token function">git</span> remote <span class="token function">add</span> origin <span class="token punctuation">[</span>RepoUrl<span class="token punctuation">]</span>
+
+<span class="token comment"># 移除遠端儲存庫位置</span>
+<span class="token function">git</span> remote remove <span class="token punctuation">[</span>RepoName<span class="token punctuation">]</span>
+<span class="token function">git</span> remote remove origin
+
+<span class="token comment"># 顯示遠端儲存庫資訊</span>
+<span class="token function">git</span> remote show <span class="token punctuation">[</span>RepoName<span class="token punctuation">]</span>
+<span class="token function">git</span> remote show origin
+
+<span class="token comment"># 查看遠端分支內容</span>
+<span class="token function">git</span> ls-remote <span class="token punctuation">[</span>RepoUrl<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h2 id="複製遠端儲存庫"><a href="#複製遠端儲存庫" class="header-anchor">#</a> 複製遠端儲存庫</h2> <p>在本地端沒有使用 <code>git init</code> 建立儲存庫的情況下，直接從遠端複製一份遠整的儲存庫下來。</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 若需要指定建立位置或名稱可以使用 FolderName</span>
+<span class="token function">git</span> clone <span class="token punctuation">[</span>RemoteRepoUrl<span class="token punctuation">]</span> <span class="token punctuation">[</span>FolderName<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>有儲存庫的情況使用 <code>git fetch</code> 或者 <code>git pull</code></p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 抓取遠端 commit 紀錄, 不改變工作目錄、HEAD、分支、暫存區</span>
+<span class="token function">git</span> fetch
+
+<span class="token comment"># 更新本地端 commit, 合併時若本地端無遠端分支會自動建立</span>
+<span class="token function">git</span> merge <span class="token punctuation">[</span>RemoteBranch<span class="token punctuation">]</span>
+<span class="token function">git</span> merge origin/main
+
+<span class="token comment"># fetch 遠端 commit 紀錄後，並進行合併</span>
+<span class="token function">git</span> pull <span class="token punctuation">[</span>RemoteRepoName<span class="token punctuation">]</span> <span class="token punctuation">[</span>RemoteBranch<span class="token punctuation">]</span>
+<span class="token function">git</span> pull origin main
+
+<span class="token comment"># 設定 git pull 源頭（upstream） repo, 減少輸入命令字元</span>
+<span class="token function">git</span> pull -u origin/main main
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h2 id="推送到遠端儲存庫"><a href="#推送到遠端儲存庫" class="header-anchor">#</a> 推送到遠端儲存庫</h2> <p>將分支內容推送至遠端儲存庫</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 推送分支到遠端儲存庫</span>
+<span class="token function">git</span> push <span class="token punctuation">[</span>RepoName<span class="token punctuation">]</span> <span class="token punctuation">[</span>Branch<span class="token punctuation">]</span>
+<span class="token function">git</span> push origin main
+
+<span class="token comment"># 設定 git push 源頭（upstream） repo, 減少輸入命令字元</span>
+<span class="token function">git</span> push -u origin main
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="推送意外"><a href="#推送意外" class="header-anchor">#</a> 推送意外</h3> <p>在 <code>git push</code> 到遠端儲存庫時，git 會要求推送的 commits 中，一定要包含遠端的最後一個 commit。</p> <p>在不符合上述情景的時候，需要先使用 <code>git pull</code> 取得遠端 commits（包含最後一個 commit 節點），再使用 <code>git push</code> 將 commits 推送至遠端。</p> <h2 id="是禁術"><a href="#是禁術" class="header-anchor">#</a> 是禁術</h2> <p>接下來的東西很恐怖！！</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 強制推送至遠端</span>
+<span class="token function">git</span> push -f
+
+<span class="token comment"># 先 fetch 就可以強制推送到遠端, 表你已知有些 commits 紀錄還是要推</span>
+<span class="token function">git</span> push --force-with-lease
+
+<span class="token comment"># 清除沒有在版控內的檔案, reset --hard 不會處理未追蹤檔案</span>
+<span class="token function">git</span> clean -f
+
+<span class="token comment"># 清除 .git 中不需要的 objects</span>
+<span class="token function">git</span> gc
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最後更新:</span> <span class="time">2022/7/26 下午6:31:13</span></div></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/notebook/assets/js/app.ca51eb31.js" defer></script><script src="/notebook/assets/js/2.feaa55c5.js" defer></script><script src="/notebook/assets/js/17.56ae330d.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Git Basic | Sihle&#39;s Notebook</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="學習筆記">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/notebook/assets/css/0.styles.f25d6b5a.css" as="style"><link rel="preload" href="/notebook/assets/js/app.ca51eb31.js" as="script"><link rel="preload" href="/notebook/assets/js/2.feaa55c5.js" as="script"><link rel="preload" href="/notebook/assets/js/3.2495e565.js" as="script"><link rel="prefetch" href="/notebook/assets/js/10.a5316d0b.js"><link rel="prefetch" href="/notebook/assets/js/11.3f8eafd9.js"><link rel="prefetch" href="/notebook/assets/js/12.4141ace7.js"><link rel="prefetch" href="/notebook/assets/js/13.a15e202c.js"><link rel="prefetch" href="/notebook/assets/js/14.a6b43a60.js"><link rel="prefetch" href="/notebook/assets/js/15.72672e6b.js"><link rel="prefetch" href="/notebook/assets/js/16.ed6b80ce.js"><link rel="prefetch" href="/notebook/assets/js/17.56ae330d.js"><link rel="prefetch" href="/notebook/assets/js/18.d0d3d1bb.js"><link rel="prefetch" href="/notebook/assets/js/19.f09e8388.js"><link rel="prefetch" href="/notebook/assets/js/20.16f463d4.js"><link rel="prefetch" href="/notebook/assets/js/21.7bfb66eb.js"><link rel="prefetch" href="/notebook/assets/js/22.7c129ff9.js"><link rel="prefetch" href="/notebook/assets/js/23.3fe9898f.js"><link rel="prefetch" href="/notebook/assets/js/24.fa0b7883.js"><link rel="prefetch" href="/notebook/assets/js/25.a083c63d.js"><link rel="prefetch" href="/notebook/assets/js/26.af9ca3a8.js"><link rel="prefetch" href="/notebook/assets/js/27.1040f99b.js"><link rel="prefetch" href="/notebook/assets/js/28.58fede67.js"><link rel="prefetch" href="/notebook/assets/js/29.7bb384bd.js"><link rel="prefetch" href="/notebook/assets/js/30.65b003fe.js"><link rel="prefetch" href="/notebook/assets/js/31.7ce0d139.js"><link rel="prefetch" href="/notebook/assets/js/32.23c3fa62.js"><link rel="prefetch" href="/notebook/assets/js/33.3fc7ce00.js"><link rel="prefetch" href="/notebook/assets/js/34.02d3f90e.js"><link rel="prefetch" href="/notebook/assets/js/4.a6a20a02.js"><link rel="prefetch" href="/notebook/assets/js/5.7cc1547f.js"><link rel="prefetch" href="/notebook/assets/js/6.8c820fdc.js"><link rel="prefetch" href="/notebook/assets/js/7.82b49aa2.js"><link rel="prefetch" href="/notebook/assets/js/8.a63ed116.js"><link rel="prefetch" href="/notebook/assets/js/9.67052e75.js">
+    <link rel="stylesheet" href="/notebook/assets/css/0.styles.f25d6b5a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/notebook/" class="home-link router-link-active"><!----> <span class="site-name">Sihle's Notebook</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/notebook/frontend/" class="nav-link router-link-active">
+  前端
+</a></div><div class="nav-item"><a href="/notebook/backend/" class="nav-link">
+  後端
+</a></div><div class="nav-item"><a href="/notebook/else/" class="nav-link">
+  其它
+</a></div><div class="nav-item"><a href="https://bugbug777.github.io/sihle/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  部落格
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/notebook/frontend/" class="nav-link router-link-active">
+  前端
+</a></div><div class="nav-item"><a href="/notebook/backend/" class="nav-link">
+  後端
+</a></div><div class="nav-item"><a href="/notebook/else/" class="nav-link">
+  其它
+</a></div><div class="nav-item"><a href="https://bugbug777.github.io/sihle/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  部落格
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Git Basic</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notebook/frontend/git/git_basic.html#誰需要使用版本控制" class="sidebar-link">誰需要使用版本控制</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/notebook/frontend/git/git_basic.html#遇到的瓶頸" class="sidebar-link">遇到的瓶頸</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/notebook/frontend/git/git_basic.html#類似的版控軟體" class="sidebar-link">類似的版控軟體</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/notebook/frontend/git/git_basic.html#git-是什麼" class="sidebar-link">Git 是什麼？</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/notebook/frontend/git/git_basic.html#學圖形介面還是指令介面" class="sidebar-link">學圖形介面還是指令介面？</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/notebook/frontend/git/git_basic.html#安裝-git" class="sidebar-link">安裝 Git</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/notebook/frontend/git/git_basic.html#初始化" class="sidebar-link">初始化</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/notebook/frontend/git/git_basic.html#stagin-area-暫存區" class="sidebar-link">Stagin Area（暫存區</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/notebook/frontend/git/git_basic.html#查閱檔案索引狀態" class="sidebar-link">查閱檔案索引狀態</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/notebook/frontend/git/git_basic.html#檔案加入索引" class="sidebar-link">檔案加入索引</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/notebook/frontend/git/git_basic.html#移除索引" class="sidebar-link">移除索引</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/notebook/frontend/git/git_basic.html#提交檔案" class="sidebar-link">提交檔案</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/notebook/frontend/git/git_basic.html#查閱提交紀錄" class="sidebar-link">查閱提交紀錄</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notebook/frontend/git/git_basic.html#查閱特定-hash-id-內容" class="sidebar-link">查閱特定 hash id 內容</a></li></ul></li><li><a href="/notebook/frontend/git/git_basic.html#忽略的檔案清單" class="sidebar-link">忽略的檔案清單</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/notebook/frontend/git/git_basic.html#檔案差異的比較" class="sidebar-link">檔案差異的比較</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="git-basic"><a href="#git-basic" class="header-anchor">#</a> Git Basic</h1> <p>這裡記錄一些 git 的基礎知識。</p> <h2 id="誰需要使用版本控制"><a href="#誰需要使用版本控制" class="header-anchor">#</a> 誰需要使用版本控制</h2> <p>但凡需要接觸程式碼的位置。</p> <ul><li>網頁設計師（Dreamweaver，圖轉碼</li> <li>前端工程師</li> <li>後端工程師</li> <li>韌體工程師</li></ul> <p>...諸如以上此類</p> <p>然而<strong>視覺設計師</strong>除外，因圖案類型的檔案為二進制的編碼，對於 git 此類的版本控制軟體難以進行檔案比對。</p> <h2 id="遇到的瓶頸"><a href="#遇到的瓶頸" class="header-anchor">#</a> 遇到的瓶頸</h2> <ul><li>檔案錯置（檔案被覆蓋</li> <li>程式碼改壞</li> <li>實驗性功能</li> <li>當機</li> <li>復原舊功能</li></ul> <p>不過透過版本控制，上述的問題都可以得到解決。</p> <p>版本控制可以完整的紀錄檔案的變化過程，例：查詢歷史紀錄、復原變更、比對差異、分支合併、協同作業等等...</p> <h2 id="類似的版控軟體"><a href="#類似的版控軟體" class="header-anchor">#</a> 類似的版控軟體</h2> <p>CVS, <strong>SVN</strong>, <strong>Git</strong>, TFS</p> <h2 id="git-是什麼"><a href="#git-是什麼" class="header-anchor">#</a> Git 是什麼？</h2> <p>作者為 Linux Torvalds，Git 最初只花了 10 天建立其雛形，其目的是要用來管理 Linux 的核心程式碼。</p> <p>Git 提供分散式的版控架構，也就是支援本地端版控儲存庫，這意味著可以不用連網，就能進行版控的相關工作，也因為這種分散式的架構，讓集中管理程式碼的風險大大降低。</p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>可以用 Email 更新？
+Ans：透過 Email 傳送版控檔案</p></div> <p><img src="/notebook/assets/img/remote_local_structure.82c33246.png" alt="分散式結構"></p> <h2 id="學圖形介面還是指令介面"><a href="#學圖形介面還是指令介面" class="header-anchor">#</a> 學圖形介面還是指令介面？</h2> <p>都學，指令介面可以完整了解整個版控的流程，圖形介面可以幫助在需要輸入過多指令時簡化流程。</p> <h2 id="安裝-git"><a href="#安裝-git" class="header-anchor">#</a> 安裝 Git</h2> <ul><li>Windows - 下載、下一步、下一步、下一步</li> <li>Mac M1 - 這裡採用 <a href="https://brew.sh/index_zh-tw" target="_blank" rel="noopener noreferrer">Homebrew<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 的方式安裝</li></ul> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 安裝 Homebrew</span>
+/bin/bash -c <span class="token string">&quot;<span class="token variable"><span class="token variable">$(</span><span class="token function">curl</span> -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="token variable">)</span></span>&quot;</span>
+
+<span class="token comment"># 安裝 Git</span>
+brew <span class="token function">install</span> <span class="token function">git</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>如果遇到找不到 brew 指令的時候，，可以嘗試重啟終端機</p></div> <h2 id="初始化"><a href="#初始化" class="header-anchor">#</a> 初始化</h2> <p>建立基本資訊，以及建立<strong>本地端</strong>儲存庫。</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 使用者名稱</span>
+<span class="token function">git</span> config user.name <span class="token string">&quot;UserName&quot;</span>
+<span class="token function">git</span> config --global user.name <span class="token string">&quot;UserName&quot;</span>
+<span class="token comment"># 使用者信箱</span>
+<span class="token function">git</span> config user.email <span class="token string">&quot;User@Mail.com&quot;</span>
+<span class="token function">git</span> config --global user.email <span class="token string">&quot;User@Mail.com&quot;</span>
+
+<span class="token comment"># 1. 建立工作目錄，Working dir</span>
+<span class="token function">mkdir</span> <span class="token punctuation">[</span>DirName<span class="token punctuation">]</span>
+<span class="token comment"># 2. 切換至該工作目錄</span>
+<span class="token builtin class-name">cd</span> <span class="token punctuation">[</span>DirName<span class="token punctuation">]</span>
+<span class="token comment"># 3. 初始化 git（建立 .git</span>
+<span class="token function">git</span> init
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>其它指令</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 簡化目錄建立以及初始化</span>
+<span class="token function">git</span> init <span class="token punctuation">[</span>DirName<span class="token punctuation">]</span>
+
+<span class="token comment"># 若想要預設主要分支為 main</span>
+<span class="token function">git</span> config --global init.defaultBranch main
+
+<span class="token comment"># 查看設定</span>
+<span class="token function">git</span> config --list <span class="token comment"># 全域</span>
+<span class="token function">git</span> config --list --local <span class="token comment"># 當前目錄設定</span>
+<span class="token function">git</span> config --list --global <span class="token comment"># 全域</span>
+<span class="token function">git</span> config --list --system <span class="token comment"># 系統</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h2 id="stagin-area-暫存區"><a href="#stagin-area-暫存區" class="header-anchor">#</a> Stagin Area（暫存區</h2> <p>在檔案進入到 Repo 之前的一個暫存區。</p> <h2 id="查閱檔案索引狀態"><a href="#查閱檔案索引狀態" class="header-anchor">#</a> 查閱檔案索引狀態</h2> <p>透過 <code>git status</code> 可以查閱檔案的索引狀態，也就是有沒有被追蹤，或者是有無進入暫存區中等待提交。</p> <ul><li>Untracked Files - 尚未被加入到索引中（暫存區</li></ul> <h2 id="檔案加入索引"><a href="#檔案加入索引" class="header-anchor">#</a> 檔案加入索引</h2> <p>加入暫存區，透過 <code>git add .</code> 快速加入所有檔案到暫存區中。（無論追蹤與否</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 快速加入索引</span>
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+
+<span class="token comment"># 加入 單一檔案、多個檔案，與萬用字元 * 併用</span>
+<span class="token function">git</span> <span class="token function">add</span> *.html *.js index.css
+
+<span class="token comment"># 加入 已被提交（追蹤）且修改過的檔案 到索引</span>
+<span class="token function">git</span> <span class="token function">add</span> -u
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="移除索引"><a href="#移除索引" class="header-anchor">#</a> 移除索引</h2> <p>從暫存區移除（unstage</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 從索引移除</span>
+<span class="token function">git</span> reset index.html
+
+<span class="token comment"># 快速將所有檔案從索引移除</span>
+<span class="token function">git</span> reset
+
+<span class="token comment"># git 的提示建議，雖然不好用</span>
+<span class="token function">git</span> <span class="token function">rm</span> --cached
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="提交檔案"><a href="#提交檔案" class="header-anchor">#</a> 提交檔案</h2> <p>正式將檔案提交到本地端的儲存庫。</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 提交並撰寫紀錄訊息</span>
+<span class="token function">git</span> -m <span class="token string">&quot;Some Text&quot;</span>
+
+<span class="token comment"># 提交已被追蹤並且修改過的檔案（新增且進入索引的檔案也會</span>
+<span class="token function">git</span> -am <span class="token string">&quot;Some Text&quot;</span>
+
+<span class="token comment"># 修改最後一次提交內容的紀錄訊息</span>
+<span class="token function">git</span> commit --amend -m <span class="token string">&quot;Some Update Text&quot;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h2 id="查閱提交紀錄"><a href="#查閱提交紀錄" class="header-anchor">#</a> 查閱提交紀錄</h2> <p>名詞說明</p> <ul><li>HEAD - 與工作目錄比對的基準</li> <li>master or main - 預設的分支名稱（通常指向當前 commit</li></ul> <p>當每次提交時，<code>HEAD</code> 以及 <code>main</code> 都會自動指向最新的 commit</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 查閱提交紀錄</span>
+<span class="token function">git</span> log
+
+<span class="token comment"># 顯示所有提交紀錄（當 HEAD 與分支不同步時</span>
+<span class="token function">git</span> log --all
+
+<span class="token comment"># 簡易線圖</span>
+<span class="token function">git</span> log --all --graph
+
+<span class="token comment"># 顯示最後一個提交紀錄，並顯示修改內容</span>
+<span class="token function">git</span> show
+
+<span class="token comment"># 指定 Commit ID 與上一版的差異</span>
+<span class="token function">git</span> show <span class="token punctuation">[</span>Commit_ID<span class="token punctuation">]</span>
+
+<span class="token comment"># 指定 Commit ID 的指定檔案 與上一版的差異，但若無差異，會顯示空白</span>
+<span class="token function">git</span> show Commit_ID FileName
+
+<span class="token comment"># 指定 Commit ID 的指定檔案的完整檔案內容（不論與前版有無差異</span>
+<span class="token function">git</span> show Commit_ID:FileName
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h3 id="查閱特定-hash-id-內容"><a href="#查閱特定-hash-id-內容" class="header-anchor">#</a> 查閱特定 hash id 內容</h3> <p>查閱特定 hash id 內容（hash id 最少 4 碼，重複則多補</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">git</span> cat-file -p HASH_ID
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><img src="/notebook/assets/img/git-log-structure.36e3d2eb.png" alt="結構圖"></p> <p><code>tree</code> 提交檔案的結構內容
+<code>parent</code> 前一個 commit</p> <p>查看 tree 結構</p> <p><img src="/notebook/assets/img/git-log-structure2.e09c223f.png" alt="tree 結構圖"></p> <p>再往內查看 blob 實際提交檔案內容（內容太多，不附圖了</p> <ul><li>040000 表目錄</li></ul> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>git 透過雜湊內容得到 hash code，因此不同目錄的檔案，如果內容相同，是可能會得到相同的 hash code.</p></div> <h2 id="忽略的檔案清單"><a href="#忽略的檔案清單" class="header-anchor">#</a> 忽略的檔案清單</h2> <p>建立 <code>.gitignore</code> 並將欲略過的檔名或目錄加入（可使用萬用字元</p> <p>線上快速建立 <code>.gitignore</code> 工具 <a href="https://www.toptal.com/developers/gitignore" target="_blank" rel="noopener noreferrer">gitignore.io<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="檔案差異的比較"><a href="#檔案差異的比較" class="header-anchor">#</a> 檔案差異的比較</h2> <p>使用 <code>git help diff</code> 查看 <code>diff</code> 的描述</p> <p>Show changes between the <code>working tree</code> and the index or a tree, changes between the index and a tree, changes between two trees, changes resulting from a merge, changes between two blob objects, or changes between two files on disk.</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 比較 Working Tree 與暫存檔的差異</span>
+<span class="token function">git</span> <span class="token function">diff</span>
+
+<span class="token comment"># 有些混亂</span>
+<span class="token function">git</span> <span class="token function">diff</span> --cached
+<span class="token function">git</span> <span class="token function">diff</span> HEAD
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最後更新:</span> <span class="time">2022/7/26 下午6:31:13</span></div></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/notebook/assets/js/app.ca51eb31.js" defer></script><script src="/notebook/assets/js/2.feaa55c5.js" defer></script><script src="/notebook/assets/js/3.2495e565.js" defer></script>
+  </body>
+</html>

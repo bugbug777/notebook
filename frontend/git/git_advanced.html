@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Git Advanced | Sihle&#39;s Notebook</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="學習筆記">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/notebook/assets/css/0.styles.f25d6b5a.css" as="style"><link rel="preload" href="/notebook/assets/js/app.ca51eb31.js" as="script"><link rel="preload" href="/notebook/assets/js/2.feaa55c5.js" as="script"><link rel="preload" href="/notebook/assets/js/9.67052e75.js" as="script"><link rel="prefetch" href="/notebook/assets/js/10.a5316d0b.js"><link rel="prefetch" href="/notebook/assets/js/11.3f8eafd9.js"><link rel="prefetch" href="/notebook/assets/js/12.4141ace7.js"><link rel="prefetch" href="/notebook/assets/js/13.a15e202c.js"><link rel="prefetch" href="/notebook/assets/js/14.a6b43a60.js"><link rel="prefetch" href="/notebook/assets/js/15.72672e6b.js"><link rel="prefetch" href="/notebook/assets/js/16.ed6b80ce.js"><link rel="prefetch" href="/notebook/assets/js/17.56ae330d.js"><link rel="prefetch" href="/notebook/assets/js/18.d0d3d1bb.js"><link rel="prefetch" href="/notebook/assets/js/19.f09e8388.js"><link rel="prefetch" href="/notebook/assets/js/20.16f463d4.js"><link rel="prefetch" href="/notebook/assets/js/21.7bfb66eb.js"><link rel="prefetch" href="/notebook/assets/js/22.7c129ff9.js"><link rel="prefetch" href="/notebook/assets/js/23.3fe9898f.js"><link rel="prefetch" href="/notebook/assets/js/24.fa0b7883.js"><link rel="prefetch" href="/notebook/assets/js/25.a083c63d.js"><link rel="prefetch" href="/notebook/assets/js/26.af9ca3a8.js"><link rel="prefetch" href="/notebook/assets/js/27.1040f99b.js"><link rel="prefetch" href="/notebook/assets/js/28.58fede67.js"><link rel="prefetch" href="/notebook/assets/js/29.7bb384bd.js"><link rel="prefetch" href="/notebook/assets/js/3.2495e565.js"><link rel="prefetch" href="/notebook/assets/js/30.65b003fe.js"><link rel="prefetch" href="/notebook/assets/js/31.7ce0d139.js"><link rel="prefetch" href="/notebook/assets/js/32.23c3fa62.js"><link rel="prefetch" href="/notebook/assets/js/33.3fc7ce00.js"><link rel="prefetch" href="/notebook/assets/js/34.02d3f90e.js"><link rel="prefetch" href="/notebook/assets/js/4.a6a20a02.js"><link rel="prefetch" href="/notebook/assets/js/5.7cc1547f.js"><link rel="prefetch" href="/notebook/assets/js/6.8c820fdc.js"><link rel="prefetch" href="/notebook/assets/js/7.82b49aa2.js"><link rel="prefetch" href="/notebook/assets/js/8.a63ed116.js">
+    <link rel="stylesheet" href="/notebook/assets/css/0.styles.f25d6b5a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/notebook/" class="home-link router-link-active"><!----> <span class="site-name">Sihle's Notebook</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/notebook/frontend/" class="nav-link router-link-active">
+  前端
+</a></div><div class="nav-item"><a href="/notebook/backend/" class="nav-link">
+  後端
+</a></div><div class="nav-item"><a href="/notebook/else/" class="nav-link">
+  其它
+</a></div><div class="nav-item"><a href="https://bugbug777.github.io/sihle/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  部落格
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/notebook/frontend/" class="nav-link router-link-active">
+  前端
+</a></div><div class="nav-item"><a href="/notebook/backend/" class="nav-link">
+  後端
+</a></div><div class="nav-item"><a href="/notebook/else/" class="nav-link">
+  其它
+</a></div><div class="nav-item"><a href="https://bugbug777.github.io/sihle/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  部落格
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Git Advanced</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notebook/frontend/git/git_advanced.html#選擇性加入索引" class="sidebar-link">選擇性加入索引</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/notebook/frontend/git/git_advanced.html#復原檔案" class="sidebar-link">復原檔案</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/notebook/frontend/git/git_advanced.html#git-checkout" class="sidebar-link">git checkout</a></li><li class="sidebar-sub-header"><a href="/notebook/frontend/git/git_advanced.html#git-revert" class="sidebar-link">git revert</a></li><li class="sidebar-sub-header"><a href="/notebook/frontend/git/git_advanced.html#git-reset" class="sidebar-link">git reset</a></li><li class="sidebar-sub-header"><a href="/notebook/frontend/git/git_advanced.html#查閱-head-的歷史移動紀錄" class="sidebar-link">查閱 HEAD 的歷史移動紀錄</a></li><li class="sidebar-sub-header"><a href="/notebook/frontend/git/git_advanced.html#revert-vs-checkout-vs-reset" class="sidebar-link">revert vs. checkout vs. reset</a></li></ul></li><li><a href="/notebook/frontend/git/git_advanced.html#切換視點" class="sidebar-link">切換視點</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/notebook/frontend/git/git_advanced.html#標籤" class="sidebar-link">標籤</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="git-advanced"><a href="#git-advanced" class="header-anchor">#</a> Git Advanced</h1> <p>紀錄 Git 相對進階一點的知識。</p> <h2 id="選擇性加入索引"><a href="#選擇性加入索引" class="header-anchor">#</a> 選擇性加入索引</h2> <p>此為 <code>git add</code> 的進階應用。</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 選擇部分內容加入索引（暫存區），檔案需要先被提交過</span>
+<span class="token comment"># s 切割更小區塊</span>
+<span class="token comment"># y 加入該區塊到暫存區</span>
+<span class="token comment"># n 略過該區塊</span>
+<span class="token comment"># e 手動編輯</span>
+<span class="token function">git</span> <span class="token function">add</span> -p
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h2 id="復原檔案"><a href="#復原檔案" class="header-anchor">#</a> 復原檔案</h2> <p>三種復原的方法</p> <ul><li><code>git checkout</code></li> <li><code>git revert</code></li> <li><code>git reset</code></li></ul> <h3 id="git-checkout"><a href="#git-checkout" class="header-anchor">#</a> <code>git checkout</code></h3> <p>常用於復原單一檔案，但此做法在重設工作目錄時效率低下，會轉而使用 <code>git reset --hard</code></p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 方法一</span>
+<span class="token function">git</span> checkout FileName
+
+<span class="token comment"># Example</span>
+<span class="token function">git</span> checkout index.html
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>復原<strong>單一檔案</strong>，但由於還原的檔案取自暫存區，因此當修改過的檔案一但進入到暫存區，就無法還原到被修改之前的狀態。</p> <p>更進一步的來說，如果被修改的檔案進到暫存區，此時如若又對這份被修改過的檔案且已進入到暫存區，又對其進行修改，接著又對該檔案使用 <code>git checkout FileName</code>，則會還原到剛進暫存區的狀態，因為此時心修改的內容尚未被加入到暫存區。</p> <p>為了不要讓上述的問題混淆，可以透過指定 Commit ID 解決此問題。</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 方法二</span>
+<span class="token function">git</span> checkout Commit_ID FileName
+
+<span class="token comment"># Example</span>
+<span class="token function">git</span> checkout HEAD index.html
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>透過方法二恢復檔案，恢復的檔案預設會被加入到暫存區，如果有新的修改，必須要重新 <code>git add</code> 到暫存區中。</p> <h3 id="git-revert"><a href="#git-revert" class="header-anchor">#</a> <code>git revert</code></h3> <p>復原 commit 做過的事情，並且自動提交 commit。</p> <p>使用情境，在修復 bug 時以為已修復並提交，結果發現 bug 依然存在，即可透過此指令進行復原。</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 取消自動提交</span>
+<span class="token function">git</span> revert Commit_ID -n
+
+<span class="token comment"># 搭配 git commit --amend 使用，修復最後一筆</span>
+<span class="token function">git</span> revert Commit_ID -n
+<span class="token function">git</span> commit --amend -m <span class="token string">&quot;Some Completed Text&quot;</span>
+
+<span class="token comment"># 連續的 rollback（需注意 commit 連貫性，即順序</span>
+<span class="token function">git</span> revert Commit_ID_1 Commit_ID_2 Commit_ID_3
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="git-reset"><a href="#git-reset" class="header-anchor">#</a> <code>git reset</code></h3> <p>使用 <code>git checkout main</code> 也可以達成類似的效果，但是被修改的異動，並不會還原，而是連帶附加上去。</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 清除、重設當前的暫存區以及工作目錄</span>
+<span class="token function">git</span> reset --hard
+
+<span class="token comment"># 清除、重設當前的暫存區、工作目錄，並移動分支、HEAD 到指定 commit</span>
+<span class="token function">git</span> reset Commit_ID --hard
+
+<span class="token comment"># 保持工作目錄不變, 清除暫存區</span>
+<span class="token function">git</span> reset --mixed
+
+<span class="token comment"># reset 至某個 commit, 但保持工作目錄不變, 清除暫存區，主要用於 打散或合併commit</span>
+<span class="token function">git</span> reset Commit_ID --mixed
+
+<span class="token comment"># 分支、HEAD、工作目錄、暫存區皆不變（基本沒有用途</span>
+<span class="token function">git</span> reset --soft
+
+<span class="token comment"># 重設分支、HEAD，但工作目錄、暫存區皆不變</span>
+<span class="token function">git</span> reset Commit_ID --soft
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>使用 <code>git reset --hard</code> 可能會導致錯誤的重置，因此使用必須特別小心，不過假如修改的內容曾經提交，那麼即使被 reset 依舊可以透過 <code>git reflog</code> 之類的指令進行修復。（前提是 git 還未執行 garbage collection, 應該是 30 days</p> <h3 id="查閱-head-的歷史移動紀錄"><a href="#查閱-head-的歷史移動紀錄" class="header-anchor">#</a> 查閱 <code>HEAD</code> 的歷史移動紀錄</h3> <p>透過 <code>git reflog</code> 找到要復原的節點，搭配 <code>git reset Commit_ID --hard</code> 即可修復。</p> <p><img src="/notebook/assets/img/git-reflog-reset.1bd30484.png" alt="git reflog"></p> <h3 id="revert-vs-checkout-vs-reset"><a href="#revert-vs-checkout-vs-reset" class="header-anchor">#</a> revert vs. checkout vs. reset</h3> <p><img src="/notebook/assets/img/revert-chechout-reset.d8ba16a3.png" alt="比較流程圖"></p> <h2 id="切換視點"><a href="#切換視點" class="header-anchor">#</a> 切換視點</h2> <p>透過 <code>git checkout</code> 移動 <code>HEAD</code>，但由於 <code>git log</code> 預設只會顯示 <code>HEAD</code> 以前的提交紀錄，因此如果需要查看完整的提交紀錄，可以使用 <code>git log --all</code></p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">git</span> checkout Commit_ID
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>如果要移動 <code>HEAD</code> 重新指回 <code>main</code> 分支，只需要使用以下語法</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token function">git</span> checkout main
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>此部分也是可以透過 Commit_ID 指向與 main 一樣視點，但差異在於直接將 <code>HEAD</code> 指向 Commit_ID，在下次進行提交時，分支 <code>main</code> 就不會同步更新，並且 Commit_ID 並沒有比 <code>main</code> 分支名稱來得更容易記憶，因此使用分支名稱，會是比較好的做法。</p> <h2 id="標籤"><a href="#標籤" class="header-anchor">#</a> 標籤</h2> <p>建立重大里程碑。</p> <div class="language-sh line-numbers-mode"><pre class="language-sh"><code><span class="token comment"># 建立標籤</span>
+<span class="token function">git</span> tag -a <span class="token string">&quot;v1.0&quot;</span> -m <span class="token string">&quot;message&quot;</span>
+
+<span class="token comment"># 查閱標籤紀錄</span>
+<span class="token function">git</span> cat-file -p v1.0
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最後更新:</span> <span class="time">2022/7/26 下午6:31:13</span></div></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/notebook/assets/js/app.ca51eb31.js" defer></script><script src="/notebook/assets/js/2.feaa55c5.js" defer></script><script src="/notebook/assets/js/9.67052e75.js" defer></script>
+  </body>
+</html>
