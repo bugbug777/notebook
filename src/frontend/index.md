@@ -56,3 +56,5 @@ sidebar: 'auto'
 - [[偷米騎巴哥]簡單介紹GIT版本控制-Part1](https://youtu.be/659kWnMgpoI)
 - [[偷米騎巴哥]簡單介紹GIT版本控制-Part2](https://youtu.be/TF6mWcBCf2o)
 - [[偷米騎巴哥]簡單介紹GIT版本控制-Part3](https://youtu.be/PjQF6Bs3IHs)
+- [[偷米騎巴哥]簡單介紹GIT版本控制-Part4](https://youtu.be/cqrTZElk0II)
+- [Git & GitHub 教學手冊](https://w3c.hexschool.com/git/cfdbd310)
